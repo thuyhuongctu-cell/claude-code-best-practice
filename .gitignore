@@ -7,3 +7,7 @@ plan/
 
 # Hook event logs may contain sensitive tool input data (file contents, command args)
 .claude/hooks/logs/
+
+# Python bytecode caches (e.g. from running hook scripts)
+__pycache__/
+*.pyc
