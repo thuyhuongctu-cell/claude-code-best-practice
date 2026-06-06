@@ -1,0 +1,23 @@
+{
+  "title": "Bai-01-Gioi-thieu",
+  "resolution": "1920x1080",
+  "_huong_dan": "Mỗi phần tử trong 'slides' = 1 trang slide + lời thuyết minh. Dùng 'image' cho ảnh PNG/JPG có sẵn, HOẶC khai báo 'pdf' ở cấp gốc (ảnh sẽ tách theo trang, ánh xạ theo thứ tự). 'subtitle' tuỳ chọn (mặc định lấy theo 'narration'). Có thể thay 'narration' bằng 'audio' nếu bạn đã có file thu sẵn.",
+
+  "pdf": null,
+
+  "slides": [
+    {
+      "image": "slides/01.png",
+      "narration": "Xin chào các em, hôm nay chúng ta bắt đầu bài đầu tiên của môn học.",
+      "subtitle": "Chào mừng đến bài 1"
+    },
+    {
+      "image": "slides/02.png",
+      "narration": "Trong bài này, các em sẽ nắm được ba mục tiêu chính sau đây."
+    },
+    {
+      "image": "slides/03.png",
+      "audio": "narration/seg-03.mp3"
+    }
+  ]
+}
