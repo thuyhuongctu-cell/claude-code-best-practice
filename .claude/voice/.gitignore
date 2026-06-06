@@ -11,5 +11,13 @@ samples/
 # API key cá nhân nếu lỡ điền vào file config riêng
 voice-config.local.json
 
+# Đầu ra & nguyên liệu bài giảng (file cá nhân, dung lượng lớn) — giữ ở máy
+lecture/output/
+lecture/**/slides/
+lecture/**/narration/
+lecture/*.mp4
+lecture/*.mp3
+lecture/*.srt
+
 # Cho phép commit file .gitkeep để giữ cấu trúc thư mục
 !clips/.gitkeep
