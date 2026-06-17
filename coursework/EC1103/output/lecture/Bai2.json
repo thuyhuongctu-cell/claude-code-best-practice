@@ -1,0 +1,71 @@
+{
+  "title": "Bai2",
+  "resolution": "1920x1080",
+  "slides": [
+    {
+      "image": "slides/Bai2-01.png",
+      "narration": "Xin chào các anh chị. Đây là Bài thực hành số 2 của học phần: Soạn thảo văn bản hành chính. Ở bài này, với mỗi loại văn bản, chúng ta sẽ ôn nhanh lý thuyết, xem một mẫu cụ thể, rồi thực hành ngay.",
+      "subtitle": "Trang bìa"
+    },
+    {
+      "image": "slides/Bai2-02.png",
+      "narration": "Mục tiêu của bài thực hành là giúp các anh chị nắm vững bố cục và thể thức của từng loại văn bản hành chính, phân biệt được khi nào dùng loại nào, soạn thảo thành thạo theo mẫu chuẩn, và biết tự rà soát, chỉnh sửa văn bản theo góp ý.",
+      "subtitle": "Mục tiêu"
+    },
+    {
+      "image": "slides/Bai2-03.png",
+      "narration": "Bài 2 hướng dẫn soạn năm loại văn bản hành chính thông dụng: Quyết định, Tờ trình, các loại Công văn, Biên bản và Báo cáo. Với mỗi loại, tôi sẽ giới thiệu qua một mẫu và giao một bài tập nhỏ.",
+      "subtitle": "Nội dung"
+    },
+    {
+      "image": "slides/Bai2-04.png",
+      "narration": "Loại đầu tiên là Quyết định. Quyết định là văn bản cá biệt, dùng để ban hành, bổ nhiệm, khen thưởng hoặc xử lý một việc cụ thể. Bố cục gồm ba phần: phần căn cứ mở đầu bằng các cụm Căn cứ…; phần quyết định trình bày thành các điều được đánh số Điều 1, Điều 2; và phần điều khoản thi hành nêu rõ ai chịu trách nhiệm thi hành và hiệu lực. Các anh chị xem mẫu Quyết định bổ nhiệm trên màn hình, chú ý cách viết phần căn cứ và cách đánh số các điều.",
+      "subtitle": "2.1. SOẠN THẢO QUYẾT ĐỊNH"
+    },
+    {
+      "image": "slides/Bai2-05.png",
+      "narration": "Loại thứ hai là Tờ trình, dùng để đề xuất cấp trên xem xét và phê duyệt một nội dung. Một tờ trình thuyết phục cần ba phần: nêu lý do và sự cần thiết, trình bày nội dung đề xuất, và đưa ra kiến nghị cụ thể. Điểm mấu chốt là lập luận chặt chẽ, có số liệu minh chứng và nêu rõ phương án. Mời các anh chị tham khảo mẫu Tờ trình xin kinh phí.",
+      "subtitle": "2.2. SOẠN THẢO TỜ TRÌNH"
+    },
+    {
+      "image": "slides/Bai2-06.png",
+      "narration": "Loại thứ ba là Công văn. Công văn rất đa dạng: công văn đề nghị, trả lời, đôn đốc, mời họp hay hướng dẫn. Đặc trưng của công văn là không ghi tên loại văn bản, mà dùng số, ký hiệu kèm phần trích yếu nội dung. Mỗi công văn chỉ nên giải quyết một chủ đề, với văn phong lịch sự, rõ ràng. Các anh chị xem mẫu Công văn mời họp và để ý phần trích yếu.",
+      "subtitle": "2.3. SOẠN THẢO CÁC LOẠI CÔNG VĂN"
+    },
+    {
+      "image": "slides/Bai2-07.png",
+      "narration": "Loại thứ tư là Biên bản, dùng để ghi nhận trung thực và khách quan một sự việc. Một biên bản đầy đủ cần có: thời gian, địa điểm, thành phần tham dự, diễn biến nội dung và phần kết luận. Cuối biên bản phải có chữ ký xác nhận của các bên liên quan để bảo đảm giá trị. Mời các anh chị xem mẫu Biên bản cuộc họp.",
+      "subtitle": "2.4. SOẠN THẢO BIÊN BẢN"
+    },
+    {
+      "image": "slides/Bai2-08.png",
+      "narration": "Loại cuối cùng của bài là Báo cáo, dùng để tổng hợp và đánh giá tình hình hoặc kết quả công việc. Bố cục gồm: đặt vấn đề, trình bày kết quả hoặc nội dung chính, và phần đánh giá kèm kiến nghị. Báo cáo cần số liệu trung thực, có so sánh và bám sát mục tiêu đề ra. Các anh chị tham khảo mẫu Báo cáo tổng kết để thực hành.",
+      "subtitle": "2.5. SOẠN THẢO BÁO CÁO"
+    },
+    {
+      "image": "slides/Bai2-09.png",
+      "narration": "Hãy xét một tình huống xâu chuỗi nhiều loại văn bản. Phòng Đào tạo cần tổ chức họp triển khai kế hoạch học kỳ, lập biên bản, rồi báo cáo kết quả lên Ban Giám hiệu. Các anh chị thử xác định trình tự văn bản cần soạn, điểm khác nhau về thể thức giữa công văn mời họp và biên bản, và những số liệu cần có trong báo cáo.",
+      "subtitle": "Tình huống thực tiễn"
+    },
+    {
+      "image": "slides/Bai2-10.png",
+      "narration": "Mời các anh chị thảo luận: khi nào nên dùng Công văn và khi nào bắt buộc phải dùng Quyết định? Hãy nêu ví dụ từ chính công việc của mình và đăng lên diễn đàn lớp.",
+      "subtitle": "Thảo luận"
+    },
+    {
+      "image": "slides/Bai2-11.png",
+      "narration": "Bài tập của Bài 2: các anh chị hãy soạn một Quyết định khen thưởng và một Công văn mời họp theo tình huống được giao. Yêu cầu đúng bố cục từng loại, đủ chín thành phần thể thức, không sai chính tả và văn phong. Các anh chị dựa trên mẫu đã giới thiệu, nộp hai file Word trên E-learning trong một tuần.",
+      "subtitle": "Bài tập vận dụng"
+    },
+    {
+      "image": "slides/Bai2-12.png",
+      "narration": "Tóm lại, Bài 2 đã hướng dẫn các anh chị soạn năm loại văn bản hành chính thông dụng cùng mẫu cụ thể. Hãy luyện tập đều đặn, vì kỹ năng soạn thảo chỉ vững khi được thực hành nhiều lần. Hẹn gặp lại các anh chị ở Bài 3 về văn bản thương mại.",
+      "subtitle": "Tổng kết"
+    },
+    {
+      "image": "slides/Bai2-13.png",
+      "narration": "Xin cảm ơn các anh chị đã theo dõi. Hẹn gặp lại ở nội dung tiếp theo.",
+      "subtitle": "Cảm ơn"
+    }
+  ]
+}

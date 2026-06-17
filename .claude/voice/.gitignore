@@ -1,0 +1,23 @@
+# Giọng nói THẬT của bạn — giữ ở máy, KHÔNG đẩy lên remote/GitHub.
+# Chỉ khung (scripts, config template, README) được commit; audio thì không.
+
+# Các clip giọng đã clone (file thật)
+clips/*.wav
+clips/*.mp3
+
+# Mẫu giọng gốc dùng để clone
+samples/
+
+# API key cá nhân nếu lỡ điền vào file config riêng
+voice-config.local.json
+
+# Đầu ra & nguyên liệu bài giảng (file cá nhân, dung lượng lớn) — giữ ở máy
+lecture/output/
+lecture/**/slides/
+lecture/**/narration/
+lecture/*.mp4
+lecture/*.mp3
+lecture/*.srt
+
+# Cho phép commit file .gitkeep để giữ cấu trúc thư mục
+!clips/.gitkeep

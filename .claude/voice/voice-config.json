@@ -1,0 +1,20 @@
+{
+  "_comment": "Cấu hình giọng nói cho voice-assistant. Xem .claude/voice/README.md để biết cách điền.",
+
+  "event_clips": {
+    "Stop": "done",
+    "SubagentStop": "subagent_done",
+    "Notification": "notification",
+    "PermissionRequest": "permission",
+    "PostToolUseFailure": "error",
+    "SessionStart": "hello"
+  },
+
+  "tts": {
+    "_comment": "Đọc-to động. Ưu tiên biến môi trường ELEVENLABS_API_KEY / ELEVENLABS_VOICE_ID. KHÔNG commit api_key thật.",
+    "provider": "elevenlabs",
+    "api_key": "",
+    "voice_id": "<DAN_VOICE_ID_CUA_BAN_VAO_DAY>",
+    "model_id": "eleven_multilingual_v2"
+  }
+}
