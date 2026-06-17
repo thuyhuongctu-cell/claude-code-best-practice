@@ -34,7 +34,38 @@ DÙNG:
 import sys
 import json
 import argparse
+import subprocess
 from pathlib import Path
+
+
+def prepare_ref_audio(path, seconds=8):
+    """Nhận audio bất kỳ (.m4a/.mp3/.wav), trả về wav 24kHz mono cắt `seconds` giây đầu."""
+    path = Path(path)
+    if path.suffix.lower() == ".wav" and "_ref24k" in path.stem:
+        return str(path)
+    try:
+        import imageio_ffmpeg
+        ff = imageio_ffmpeg.get_ffmpeg_exe()
+    except ImportError:
+        return str(path)  # không có ffmpeg: dùng nguyên file (giả định đã là wav hợp lệ)
+    out = path.with_name(path.stem + "_ref24k.wav")
+    subprocess.run([ff, "-y", "-i", str(path), "-ac", "1", "-ar", "24000",
+                    "-ss", "0", "-t", str(seconds), str(out)], stderr=subprocess.DEVNULL)
+    return str(out)
+
+
+def auto_transcribe(wav_path, lang="vi"):
+    """Tự phiên âm đoạn mẫu bằng faster-whisper (để khỏi gõ transcript tay)."""
+    try:
+        from faster_whisper import WhisperModel
+    except ImportError:
+        sys.exit("Cần 'faster-whisper' để tự phiên âm: pip install faster-whisper "
+                 "(hoặc truyền --ref-text thủ công).")
+    model = WhisperModel("small", device="cpu", compute_type="int8")
+    segs, _ = model.transcribe(wav_path, language=lang)
+    text = " ".join(s.text.strip() for s in segs).strip()
+    print(f"📝 Transcript tự nhận diện: {text}")
+    return text
 
 
 def load_engine(mode, emotion):
@@ -90,8 +121,8 @@ def do_lecture(args):
 
 def main():
     ap = argparse.ArgumentParser(description="Clone giọng bằng VieNeu-TTS (cục bộ).")
-    ap.add_argument("--ref-audio", required=True, help="File wav mẫu (3–8s, mono).")
-    ap.add_argument("--ref-text", required=True, help="ĐÚNG câu nói trong đoạn mẫu (transcript).")
+    ap.add_argument("--ref-audio", required=True, help="File audio mẫu (.m4a/.mp3/.wav). Tự chuyển + cắt 8s.")
+    ap.add_argument("--ref-text", default=None, help="Transcript đoạn mẫu. BỎ TRỐNG để tự phiên âm (Whisper).")
     ap.add_argument("--text", help="Câu cần đọc (chế độ 1 câu).")
     ap.add_argument("--text-file", help="File .txt cần đọc (thay cho --text).")
     ap.add_argument("--lecture", help="File JSON lecture-toolkit để sinh giọng cả bài.")
@@ -104,6 +135,10 @@ def main():
 
     if not Path(args.ref_audio).exists():
         sys.exit(f"Không thấy file mẫu: {args.ref_audio}")
+    # Chuẩn hoá audio (m4a→wav, cắt 8s) và tự phiên âm nếu thiếu transcript
+    args.ref_audio = prepare_ref_audio(args.ref_audio)
+    if not args.ref_text:
+        args.ref_text = auto_transcribe(args.ref_audio)
     if args.lecture:
         do_lecture(args)
     elif args.text or args.text_file:
